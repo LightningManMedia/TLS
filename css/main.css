@@ -1347,8 +1347,34 @@ ul {
 .section--first {
   margin-top: 70px;
 }
+
+.section--about { 
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.subscription-col { 
+  height: 300px;
+  background-color: #242d34;
+  opacity: 0.9;
+}
+.upcoming-col { 
+  height: 200px;
+  background-color: #242d34;
+}
+.subscription-box-content { 
+  padding: 5px;
+}
+.col-md-6, .col-md-5, .col-md-4 { 
+  background-clip: content-box;
+}
 .section--first .section__title {
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
+}
+@media (max-width: 768px) { 
+  .subscription-col, .upcoming-col { 
+    margin-top: 1em;
+  }
 }
 .section--details {
   margin-top: 70px;
