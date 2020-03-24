@@ -1359,7 +1359,7 @@ ul {
   opacity: 0.9;
 }
 .upcoming-col { 
-  height: 200px;
+  height: 250px;
   background-color: #242d34;
 }
 .subscription-box-content { 
@@ -2709,6 +2709,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 @media (min-width: 768px) {
   .plan-features {
     margin-bottom: 30px;
+    margin-top: 1em;
   }
 }
 /*==============================
