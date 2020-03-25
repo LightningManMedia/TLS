@@ -39,6 +39,7 @@ Primary use:	HotFlix Template
 	Fonts
 ==============================*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700,900&display=swap');
 /*==============================
 	Common styles
 ==============================*/
@@ -51,7 +52,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   background-color: #1a191f;
   -webkit-font-smoothing: antialiased;
@@ -1154,10 +1155,11 @@ ul {
 }
 .section__title {
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 28px;
   line-height: 100%;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 .section__title b {
   font-weight: 600;
