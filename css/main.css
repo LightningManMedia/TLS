@@ -2765,14 +2765,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin: 15px 0;
   padding-left: 65px;
 }
-.feature__icon {
+.feature__icon, ion-icon {
   display: block;
   position: absolute;
-  top: -8px;
+  top: auto;
   left: 0;
   font-size: 42px;
 }
-.feature__icon:before {
+.feature__icon:before, ion-icon {
   color: #ffd80e;
 }
 .feature__title {

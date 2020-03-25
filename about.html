@@ -25,8 +25,7 @@
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="author" content="Dmitry Volkov">
-	<title>TLS – Watch great MMA fighters DOMINATE.</title>
+	<title>TSL – Live Sports on Demand</title>
 </head>
 
 <body class="body">
@@ -150,16 +149,19 @@
 
 								<!-- section title -->
 								<div class="col-10">
-									<h2 class="section__title"><b>TLS</b> – Best Place for Movies</h2>
+									<h2 class="section__title"><b>TSL</b> – Live Sports on Demand</h2>
 								</div>
 								<!-- end section title -->
 				
 								<!-- section text -->
 								<div class="col-10">
-									<p class="section__text">Watch great MMA fighters DOMINATE.
-										See great fights all year round streamed on any device.</p>
+									<p class="section__text">
+										Great Fights. Any Device. One Price.
+
+</p>
 										
-									<p class="section__text section__text--last-with-margin"></p>
+									<p class="section__text section__text--last-with-margin">Get exclusive access to all of the fights and original content.
+										All content live and on-demand, wherever you are. TSL is available on smart TVs, game consoles, connected devices, smartphones, tablets, computers, and more.</p>
 								</div>
 								<!-- end section text -->
 			</div>
@@ -175,7 +177,7 @@
 						<li><span>Get every fight all year long</span></li>
 
 					</ul>
-						<a href="#" class="price__btn">Choose Plan</a>
+						<a href="#" class="price__btn">Sign Up Now</a>
 					</div>
 				</div>
 				<!-- end price -->
@@ -189,7 +191,7 @@
 						<li><span>Full access to all Live and On Demand Content</span></li>
 						<li><span>Get every fight for the next 30 days</span></li>
 					</ul>
-						<a href="#" class="price__btn">Choose Plan</a>
+						<a href="#" class="price__btn">Sign Up Now</a>
 					</div>
 				</div>
 				<!-- end price -->
@@ -201,7 +203,7 @@
 	<!-- upcoming -->
 	<section class="section section--grid">
 		<div class="container">
-			<h2 class="section__title section__title--no-margin">Upcoming Fights</h2>
+			<h2 class="section__title section__title--no-margin">Programming Lineup</h2>
 
 			<div class="row">
 				<div class="col-md-4 upcoming-col">
@@ -278,9 +280,12 @@
 					<!-- feature -->
 					<div class="col-12 col-md-6">
 						<div class="feature">
-							<i class="icon ion-ios-tv feature__icon"></i>
+							
+							<!--<i class="icon ion-ios-tv feature__icon"></i>-->
+							<ion-icon name="tv-outline"></ion-icon>
+
 							<h3 class="feature__title">TV</h3>
-							<p class="feature__text">Watch on your smart TVs and connected devices including: Amazon Fire TV/Stick, Android TV, Apple TV, Chromecast, LG Smart TV, ROKU, Samsung Smart TV, VIZIO SmartCast TV, Xfinity X1, Xfinity Flex, & more.</p>
+							<p class="feature__text">Watch on your smart TVs and connected devices</p>
 						</div>
 					</div>
 					<!-- end feature -->
@@ -288,7 +293,7 @@
 					<!-- feature -->
 					<div class="col-12 col-md-6">
 						<div class="feature">
-							<i class="icon ion-ios-film feature__icon"></i>
+							<ion-icon name="phone-landscape-outline"></ion-icon>
 							<h3 class="feature__title">Mobile & Tablet</h3>
 							<p class="feature__text">Download our app for Android and iOS</p>
 						</div>
@@ -298,7 +303,8 @@
 					<!-- feature -->
 					<div class="col-12 col-md-6">
 						<div class="feature">
-							<i class="icon ion-ios-trophy feature__icon"></i>
+							<!--<i class="icon ion-ios-laptop feature__icon"></i>-->
+							<ion-icon name="laptop-outline"></ion-icon>
 							<h3 class="feature__title">Computer</h3>
 							<p class="feature__text">Chrome, Firefox, Safari, Edge, Internet Explorer and Opera</p>
 						</div>
@@ -308,7 +314,7 @@
 					<!-- feature -->
 					<div class="col-12 col-md-6">
 						<div class="feature">
-							<i class="icon ion-ios-notifications feature__icon"></i>
+							<ion-icon name="game-controller-outline"></ion-icon>
 							<h3 class="feature__title">Game Consoles</h3>
 							<p class="feature__text">Xbox One S / X and PS4</p>
 						</div>
@@ -399,7 +405,7 @@
 							<img src="img/logo.svg" alt="">
 						</a>
 
-						<span class="footer__copyright">© 2019 HotFlix<br> Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank">Dmitry Volkov</a></span>
+						<span class="footer__copyright">©<span id="year"></span> TSL<br> All rights reserved.</span>
 
 						<nav class="footer__nav">
 							<a href="about.html">About Us</a>
@@ -416,7 +422,9 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
 	<!-- JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
@@ -430,5 +438,6 @@
 	<script src="js/photoswipe.min.js"></script>
 	<script src="js/photoswipe-ui-default.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
