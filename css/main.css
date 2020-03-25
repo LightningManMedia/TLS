@@ -1361,8 +1361,13 @@ ul {
   opacity: 0.9;
 }
 .upcoming-col { 
-  height: 250px;
-  background-color: #242d34;
+  height: auto;
+
+}
+.upcoming-col img{ 
+width: 100%;
+object-fit: cover;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .subscription-box-content { 
   padding: 5px;
@@ -1372,6 +1377,11 @@ ul {
 }
 .section--first .section__title {
   margin-bottom: 0.5em;
+}
+@media (min-width: 768px) { 
+  .upcoming-col { 
+    margin-top: 1em;
+  }
 }
 @media (max-width: 768px) { 
   .subscription-col, .upcoming-col { 
@@ -2556,6 +2566,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
   margin: 15px 0;
   position: relative;
+  opacity: 0.9;
 }
 .price--premium:before {
   content: '';
@@ -2576,8 +2587,20 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #fd6060;
 }
 .price--premium .price__btn {
-  border-color: #fd6060;
+  transition: all 0.2s ease;
+  border-color: #ffd80e;
+  background-color: transparent;
+  color: rgba(255,255,255,0.7);
 }
+.price__btn { 
+  font-weight: 700;
+}
+.price__btn:hover { 
+  background:  #ffd80e;
+  border-color: white;
+  color: rgba(26,25,31,0.75) !important;
+}
+
 .price--profile {
   margin: 0 0 30px;
 }
