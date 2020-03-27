@@ -425,7 +425,7 @@ ul {
   border: 1px solid #ffd80e;
 }
 .header__sign-in span {
-  display: none;
+  display: inline;
 }
 .header__sign-in i {
   color: rgba(255,255,255,0.7);
@@ -637,6 +637,29 @@ ul {
   .header__search-button {
     left: auto;
     right: 20px;
+  }
+}
+@media (max-width: 768px) { 
+  .header__sign-in {
+    height: 40px;
+    width: 120px;
+    margin-left: 30px;
+  }
+  .header__sign-in i {
+    display: none;
+  }
+  .header__sign-in span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .header__sign-in:hover span {
+    color: #fff;
   }
 }
 @media (min-width: 768px) {
