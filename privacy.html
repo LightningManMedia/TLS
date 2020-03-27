@@ -499,34 +499,35 @@ sharing your personal information with us.</strong>	</p>
 	</section>
 	<!-- end privacy -->
 
-	<!-- footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="footer__content">
-						<a href="index.html" class="footer__logo">
-							<img src="img/logo.svg" alt="">
-						</a>
-
-						<span class="footer__copyright">© 2019 HotFlix<br> Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank">Dmitry Volkov</a></span>
-
-						<nav class="footer__nav">
-							<a href="about.html">About Us</a>
-							<a href="contacts.html">Contacts</a>
-							<a href="privacy.html">Privacy Policy</a>
-						</nav>
-
-						<button class="footer__back" type="button">
-							<i class="icon ion-ios-arrow-round-up"></i>
-						</button>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer__content">
+							<a href="index.html" class="footer__logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+	
+							<span class="footer__copyright">©<span id="year"></span> TSL<br> All rights reserved.</span>
+	
+							<nav class="footer__nav">
+								<a href="contacts.html">Contact Us</a>
+								<a href="privacy.html">Privacy Policy</a>
+							</nav>
+	<!-- livenation samsung twitch micrsofot viacom youtube-->
+							<button class="footer__back" type="button">
+								<i class="icon ion-ios-arrow-round-up"></i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!-- end footer -->
-
+		</footer>
+		<!-- end footer -->
+		<script>
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		</script>
 	<!-- JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
