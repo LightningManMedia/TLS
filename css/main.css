@@ -639,7 +639,13 @@ ul {
     right: 20px;
   }
 }
+@media (min-width: 1200px) { 
+  .hide-wide { 
+    display: none;
+      }
+}
 @media (max-width: 768px) { 
+
   .header__sign-in {
     height: 40px;
     width: 120px;
@@ -663,6 +669,7 @@ ul {
   }
 }
 @media (min-width: 768px) {
+
   .header__content {
     height: 80px;
   }
